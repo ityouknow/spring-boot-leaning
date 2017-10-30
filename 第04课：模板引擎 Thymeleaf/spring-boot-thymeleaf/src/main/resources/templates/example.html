@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Example</title>
+</head>
+<body>
+    <div >
+        <h1>text</h1>
+        <p th:text="${userName}">neo</p>
+        <span th:text="'Welcome to our application, ' + ${userName} + '!'"></span>
+        <br/>
+        <span th:text="|Welcome to our application, ${userName}!|"></span>
+    </div>
+
+    <div >
+        <h1>If/Unless</h1>
+        <a th:if="${flag == 'yes'}"  th:href="@{/home}"> home </a>
+        <br/>
+        <a th:unless="${flag != 'no'}" th:href="@{http://www.ityouknow.com/}" >ityouknow</a>
+    </div>
+
+    <div >
+        <h1>for 循环</h1>
+        <table>
+            <tr  th:each="user,iterStat : ${users}">
+                <td th:text="${user.name}">neo</td>
+                <td th:text="${user.age}">6</td>
+                <td th:text="${user.pass}">213</td>
+                <td th:text="${iterStat.index}">index</td>
+            </tr>
+        </table>
+    </div>
+
+    <div >
+        <h1>URL</h1>
+        <a  th:href="@{http://www.ityouknow.com/{type}(type=${type})}">link1</a>
+        <br/>
+        <a href="details.html" th:href="@{http://www.ityouknow.com/{pageId}/can-use-springcloud.html(pageId=${pageId})}">view</a>
+        <br/>
+        <div th:style="'background:url(' + @{${img}} + ');'">
+            <br/><br/><br/>
+        </div>
+    </div>
+
+    <div th:inline="text" >
+        <h1>内联[ [ ] ]</h1>
+        <p>Hello, [[${userName}]]</p>
+        <br/>
+    </div>
+
+    <div  >
+        <h1>内嵌变量</h1>
+        <p th:text="${#dates.format(date, 'dd/MMM/yyyy HH:mm')}">neo</p>
+        <p th:text="${#dates.createToday()}">neo</p>
+        <p th:text="${#dates.createNow()}">neo</p>
+
+        <p th:text="${#strings.isEmpty(userName)}">userName</p>
+        <p th:text="${#strings.listIsEmpty(users)}">userName</p>
+        <p th:text="${#strings.length(userName)}">userName</p>
+        <p th:text="${#strings.concat(userName)}"></p>
+
+        <p th:text="${#strings.randomAlphanumeric(count)}">userName</p>
+
+        <br/>
+    </div>
+
+</body>
+<script th:inline="javascript">
+    var name = [[${userName}]] + ', Sebastian';
+  //  alert(name);
+</script>
+</html>
