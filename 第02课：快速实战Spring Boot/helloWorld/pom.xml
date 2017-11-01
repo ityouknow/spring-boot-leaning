@@ -49,7 +49,11 @@
 		    <!--不能有 scop 否则还是启动不了 -->
             	    <!-- <scope>provided</scope> -->
 		</dependency>
-		
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-web</artifactId>
+		    <version>RELEASE</version>
+		</dependency>
 	</dependencies>
 
 	<build>
