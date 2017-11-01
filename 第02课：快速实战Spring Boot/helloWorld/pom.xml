@@ -40,6 +40,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!--内置Tomcat没有正常启动-->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-tomcat</artifactId>
+		    <version>1.5.1.RELEASE</version>
+		    <!--不能有 scop 否则还是启动不了 -->
+            	    <!-- <scope>provided</scope> -->
+		</dependency>
+		
 	</dependencies>
 
 	<build>
