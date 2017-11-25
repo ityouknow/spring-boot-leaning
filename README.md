@@ -15,4 +15,6 @@
 - [第08课：MyBatis Druid 多数据源](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97ed968673133615f745f)
 - [第08课：MyBatis Druid 多数据源](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97f0d68673133615f7481)
 - [第09课：如何玩转 Redis](http://www.ityouknow.com/springboot/2017/05/06/springboot-mail.html)
-- [第10课：Redis 实现数据缓存和 Session 共享](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97f3f68673133615f749b)
+- [第10课：Redis 实现数据缓存和 Session 共享](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97f3f68673133615f749b)  
+- [第11课：RabbitMQ 详解](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97f9c68673133615f74de)  
+- [第12课：MongoDB 实战](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97fd568673133615f750e)  
