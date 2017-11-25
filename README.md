@@ -18,3 +18,8 @@
 - [第10课：Redis 实现数据缓存和 Session 共享](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97f3f68673133615f749b)  
 - [第11课：RabbitMQ 详解](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97f9c68673133615f74de)  
 - [第12课：MongoDB 实战](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97fd568673133615f750e)  
+
+
+
+
+> 有问题可以在读者圈或者达人课文末给我留言。
