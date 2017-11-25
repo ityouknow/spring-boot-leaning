@@ -1,5 +1,18 @@
-# gitChat 达人课 示例代码
-
+# Spring Boot精选课程
 
 [课程地址](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba)
 
+
+达人课内容：
+
+- [第01课：课程概要](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f5e21449cd433061360883)
+- [第02课：快速实战 Spring Boot](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f68c4f49cd43306136301c)
+- [第03课：快速体验 Web 开发](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f6922549cd4330613634a4)
+- [第04课：Spring Data JPA 的使用](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f6a809a5beea6a3fd8a7f2)
+- [第05课：模板引擎 Thymeleaf](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f6d537a5beea6a3fd8c216)
+- [第06课：JPA 和 Thymeleaf 实践](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f6f2dba5beea6a3fd8d5b0)
+- [第07课：Spring Boot 集成 MyBatis](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97e7e68673133615f7427)
+- [第08课：MyBatis Druid 多数据源](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97ed968673133615f745f)
+- [第08课：MyBatis Druid 多数据源](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97f0d68673133615f7481)
+- [第09课：如何玩转 Redis](http://www.ityouknow.com/springboot/2017/05/06/springboot-mail.html)
+- [第10课：Redis 实现数据缓存和 Session 共享](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97f3f68673133615f749b)
