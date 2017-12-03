@@ -16,7 +16,9 @@
 - [第09课：如何玩转 Redis](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97f0d68673133615f7481)
 - [第10课：Redis 实现数据缓存和 Session 共享](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97f3f68673133615f749b)  
 - [第11课：RabbitMQ 详解](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97f9c68673133615f74de)  
-- [第12课：MongoDB 实战](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97fd568673133615f750e)  
+- [第12课：MongoDB 实战](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97fd568673133615f750e) 
+- [第13课：使用 Spring Boot 发送邮件](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f9800d68673133615f7529) 
+- [第14课：Spring Boot 集成 Quartz](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f9806168673133615f7564)  
 
 
 
