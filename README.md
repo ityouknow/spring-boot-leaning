@@ -21,6 +21,4 @@
 - [第14课：Spring Boot 集成 Quartz](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f9806168673133615f7564)  
 
 
-
-
 > 有问题可以在读者圈或者达人课文末给我留言。
