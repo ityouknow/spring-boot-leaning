@@ -21,6 +21,8 @@
 - [第12课：MongoDB 实战](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f97fd568673133615f750e) 
 - [第13课：使用 Spring Boot 发送邮件](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f9800d68673133615f7529) 
 - [第14课：Spring Boot 集成 Quartz](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f9806168673133615f7564)  
+- [第15课：Spring Boot 集成测试和部署运维](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f980e668673133615f75b9)  
+- [第16课：综合实战用户管理系统](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f9810d68673133615f75ce)  
 
 
 > 有问题可以在读者圈或者达人课文末给我留言。
