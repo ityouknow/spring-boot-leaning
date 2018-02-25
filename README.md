@@ -1,5 +1,7 @@
 # Spring Boot精选课程
 
+[Spring Boot 中文索引](https://github.com/ityouknow/awesome-spring-boot)
+
 [课程地址](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba)
 
 [码云地址](https://gitee.com/ityouknow/spring-boot-leaning)
