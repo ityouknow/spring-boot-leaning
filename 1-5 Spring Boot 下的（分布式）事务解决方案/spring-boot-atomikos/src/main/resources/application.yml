@@ -1,0 +1,23 @@
+spring:
+  jta:
+    enabled: true
+    atomikos:
+      datasource:
+        primary:
+          xa-properties.url: jdbc:mysql://localhost:3306/test1
+          xa-properties.user: root
+          xa-properties.password: root
+          xa-data-source-class-name: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource
+          unique-resource-name: test1
+        secondary:
+          xa-properties.url: jdbc:mysql://localhost:3306/test2
+          xa-properties.user: root
+          xa-properties.password: root
+          xa-data-source-class-name: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource
+          unique-resource-name: test2
+  jpa:
+    database: mysql
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update

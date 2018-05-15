@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    primary:
+      jdbc-url: jdbc:mysql://localhost:3306/test1
+      username: root
+      password: root
+    secondary:
+      jdbc-url: jdbc:mysql://localhost:3306/test2
+      username: root
+      password: root
+  jpa:
+    database: mysql
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
