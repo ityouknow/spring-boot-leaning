@@ -4,8 +4,7 @@
 
 [课程地址](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba)
 
-[码云地址](https://gitee.com/ityouknow/spring-boot-leaning)
-
+[代码地址](https://github.com/ityouknow/spring-boot-leaning/tree/gitbook_column1.0)
 
 达人课内容：
 
