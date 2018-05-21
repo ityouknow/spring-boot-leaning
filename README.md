@@ -1,6 +1,4 @@
-# Spring Boot精选课程
-
-[Spring Boot 中文索引](https://github.com/ityouknow/awesome-spring-boot)
+# Spring Boot 精选课程
 
 [课程地址](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba)
 
@@ -27,7 +25,6 @@
 
 
 > 有问题可以在读者圈或者达人课文末给我留言。
-
 
 
 关注公众号：纯洁的微笑，回复"springboot"进群交流
