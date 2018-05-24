@@ -13,7 +13,7 @@
 
 [课程地址](http://blog.51cto.com/cloumn/detail/4)
 
-[代码地址](https://github.com/ityouknow/spring-boot-leaning/tree/gitbook_column1.0)
+[代码地址](https://github.com/ityouknow/spring-boot-leaning/tree/51cto_column)
 
 
 关注公众号：纯洁的微笑，回复"springboot"进群交流
