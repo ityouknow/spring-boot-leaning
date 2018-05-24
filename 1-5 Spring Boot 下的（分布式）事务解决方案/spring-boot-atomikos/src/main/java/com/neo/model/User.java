@@ -1,9 +1,7 @@
 package com.neo.model;
 
 
-
 import javax.persistence.*;
-
 import java.io.Serializable;
 
 @Entity
