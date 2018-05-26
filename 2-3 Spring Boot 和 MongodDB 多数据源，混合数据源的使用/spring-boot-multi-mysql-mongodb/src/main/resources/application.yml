@@ -1,0 +1,23 @@
+spring:
+  #数据库配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+  #jpa配置
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  #mongo配置
+  data:
+    mongodb:
+      database: test
+      uri: mongodb://localhost:27017
+
+
+
+
