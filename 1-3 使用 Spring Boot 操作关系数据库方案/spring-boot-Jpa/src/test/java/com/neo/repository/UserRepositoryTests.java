@@ -1,6 +1,6 @@
 package com.neo.repository;
 
-import com.neo.model.User;
+import com.neo.domain.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -32,18 +32,20 @@ public class UserRepositoryTests {
 		userRepository.save(new User("bb", "bb123456","bb@126.com", "bb",  formattedDate));
 		userRepository.save(new User("cc", "cc123456","cc@126.com", "cc",  formattedDate));
 
-		//Assert.assertEquals(3, userRepository.findAll().size());
+		Assert.assertEquals(3, userRepository.findAll());
 		Assert.assertEquals("bb", userRepository.findByUserNameOrEmail("bb", "bb@126.com").getNickName());
 //		userRepository.delete(userRepository.findByUserName("aa"));
 	}
+
 
 	@Test
 	public void testBaseQuery() {
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG);
-		User user=new User("ff", "ff123456","ff@126.com", "ff",  dateFormat.format(date));
+		String formattedDate = dateFormat.format(date);
+		User user=new User("ff", "ff123456","ff@126.com", "ff",  formattedDate);
 		userRepository.findAll();
-		userRepository.findById(3l);
+		userRepository.findById(1L);
 		userRepository.save(user);
 		user.setId(2l);
 		userRepository.delete(user);
@@ -62,7 +64,8 @@ public class UserRepositoryTests {
 	@Test
 	public void testPageQuery()  {
 		int page=1,size=2;
-		Pageable pageable =PageRequest.of(page, size, Sort.by(Sort.Direction.ASC,"id"));
+		Sort sort = new Sort(Sort.Direction.DESC, "id");
+		Pageable pageable = PageRequest.of(page, size, sort);
 		userRepository.findALL(pageable);
 		userRepository.findByNickName("aa", pageable);
 	}

@@ -1,6 +1,6 @@
 package com.neo.repository;
 
-import com.neo.model.User;
+import com.neo.domain.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
