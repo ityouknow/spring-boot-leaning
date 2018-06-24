@@ -3,6 +3,7 @@
 
 [Spring Boot 中文索引](https://github.com/ityouknow/awesome-spring-boot) &nbsp;| &nbsp; [课程地址](http://blog.51cto.com/cloumn/detail/4) &nbsp;| &nbsp; [代码地址](https://github.com/ityouknow/spring-boot-leaning/tree/51cto_column)
 
+课程内容：
 
 - [微服务技术架构和大数据治理实战](http://blog.51cto.com/cloumn/blog/49)
 
@@ -20,3 +21,10 @@
 - [2-5 MongoDB 分布式计算 Aggregate VS Mapreduce ](http://blog.51cto.com/cloumn/blog/94)
 
 - [3-1 各类同步技术方案对比、介绍](http://blog.51cto.com/cloumn/blog/77)
+
+
+> 有问题给我留言。
+
+关注公众号：纯洁的微笑，学习更多关于 Spring Boot 内容，公号内回复"springboot"进群交流。
+
+![](http://www.ityouknow.com/assets/images/keeppuresmile_430.jpg)
