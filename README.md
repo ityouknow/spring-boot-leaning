@@ -1,7 +1,7 @@
 # 微服务技术架构和大数据治理实战
 
 
-[课程地址](http://blog.51cto.com/cloumn/detail/4)
+[Spring Boot 中文索引](https://github.com/ityouknow/awesome-spring-boot) &nbsp;| &nbsp; [课程地址](http://blog.51cto.com/cloumn/detail/4) &nbsp;| &nbsp; [代码地址](https://github.com/ityouknow/spring-boot-leaning/tree/51cto_column)
 
 
 - [微服务技术架构和大数据治理实战](http://blog.51cto.com/cloumn/blog/49)
@@ -19,3 +19,4 @@
 - [2-4 MongoDB 支持动态 SQL、分页方案](http://blog.51cto.com/cloumn/blog/94)
 - [2-5 MongoDB 分布式计算 Aggregate VS Mapreduce ](http://blog.51cto.com/cloumn/blog/94)
 
+- [3-1 各类同步技术方案对比、介绍](http://blog.51cto.com/cloumn/blog/77)
