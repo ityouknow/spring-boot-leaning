@@ -1,8 +1,6 @@
 # Spring Boot 精选课程
 
-[课程地址](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba)
-
-[代码地址](https://github.com/ityouknow/spring-boot-leaning/tree/gitbook_column1.0)
+[Spring Boot 中文索引](https://github.com/ityouknow/awesome-spring-boot) &nbsp;| &nbsp;[课程地址](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba)  &nbsp;| &nbsp; [代码地址](https://github.com/ityouknow/spring-boot-leaning/tree/gitbook_column1.0)
 
 达人课内容：
 
@@ -24,10 +22,9 @@
 - [第16课：综合实战用户管理系统](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba/topic/59f9810d68673133615f75ce)  
 
 
-> 有问题可以在读者圈或者达人课文末给我留言。
+> 有问题可以在读者圈或给我留言。
 
+关注公众号：纯洁的微笑，学习更多关于 Spring Boot 内容，公号内回复"springboot"进群交流。
 
-关注公众号：纯洁的微笑，回复"springboot"进群交流
-
-![](http://www.ityouknow.com/assets/images/keeppuresmile.jpg)
+![](http://www.ityouknow.com/assets/images/keeppuresmile_430.jpg)
 
