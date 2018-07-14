@@ -18,6 +18,9 @@
 - [2-4 MongoDB 支持动态 SQL、分页方案](http://blog.51cto.com/cloumn/blog/94)
 - [2-5 MongoDB 分布式计算 Aggregate VS Mapreduce ](http://blog.51cto.com/cloumn/blog/94)
 - [3-1 各类同步技术方案对比、介绍](http://blog.51cto.com/cloumn/blog/77)
+- [3-2 同步工具 Canal 使用、搭建方案介绍](http://blog.51cto.com/cloumn/blog/78)
+- [3-3 使用 Canal 将业务数据从 Mysql 同步到 MongoDB](http://blog.51cto.com/cloumn/blog/79)
+- [3-4 解决后期业务变动导致的数据结构不一致的问题](http://blog.51cto.com/cloumn/blog/80)
 
 
 > 有问题给我留言。
