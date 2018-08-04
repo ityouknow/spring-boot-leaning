@@ -21,6 +21,11 @@
 - [3-2 同步工具 Canal 使用、搭建方案介绍](http://blog.51cto.com/cloumn/blog/78)
 - [3-3 使用 Canal 将业务数据从 Mysql 同步到 MongoDB](http://blog.51cto.com/cloumn/blog/79)
 - [3-4 解决后期业务变动导致的数据结构不一致的问题](http://blog.51cto.com/cloumn/blog/80)
+- [4-1 如何在原有的系统架构上进行微服务架构演进](http://blog.51cto.com/cloumn/blog/81)
+- [4-2 如何在微服务架构中做好部署、监控](http://blog.51cto.com/cloumn/blog/82)
+- [4-3 在微服务架构演化过程中的一些经验和教训](http://blog.51cto.com/cloumn/blog/83)
+
+
 
 
 > 有问题给我留言。
