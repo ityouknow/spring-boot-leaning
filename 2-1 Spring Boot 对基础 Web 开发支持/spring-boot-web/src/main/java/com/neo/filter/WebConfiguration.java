@@ -10,18 +10,12 @@ import java.io.IOException;
 
 @Configuration
 public class WebConfiguration {
-    @Bean
-    public RemoteIpFilter remoteIpFilter() {
-        return new RemoteIpFilter();
-    }
-    
+
     @Bean
     public FilterRegistrationBean testFilterRegistration() {
-
         FilterRegistrationBean registration = new FilterRegistrationBean();
         registration.setFilter(new MyFilter());
         registration.addUrlPatterns("/*");
-        registration.addInitParameter("paramName", "paramValue");
         registration.setName("MyFilter");
         registration.setOrder(6);
         return registration;
@@ -29,11 +23,9 @@ public class WebConfiguration {
 
     @Bean
     public FilterRegistrationBean test2FilterRegistration() {
-
         FilterRegistrationBean registration = new FilterRegistrationBean();
         registration.setFilter(new MyFilter2());
         registration.addUrlPatterns("/*");
-        registration.addInitParameter("paramName", "paramValue");
         registration.setName("MyFilter2");
         registration.setOrder(1);
         return registration;

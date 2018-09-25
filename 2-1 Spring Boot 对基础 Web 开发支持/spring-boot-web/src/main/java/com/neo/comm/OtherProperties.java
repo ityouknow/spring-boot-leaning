@@ -1,13 +1,15 @@
 package com.neo.comm;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties(prefix="neo")
-public class NeoProperties {
+@ConfigurationProperties(prefix="other")
+@PropertySource("classpath:other.properties")
+public class OtherProperties {
 	private String title;
-	private String description;
+	private String blog;
 
 	public String getTitle() {
 		return title;
@@ -17,11 +19,11 @@ public class NeoProperties {
 		this.title = title;
 	}
 
-	public String getDescription() {
-		return description;
+	public String getBlog() {
+		return blog;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setBlog(String blog) {
+		this.blog = blog;
 	}
 }

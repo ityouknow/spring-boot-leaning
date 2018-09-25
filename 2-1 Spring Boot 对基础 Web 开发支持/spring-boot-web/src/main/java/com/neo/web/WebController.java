@@ -42,10 +42,8 @@ public class WebController {
 
 
     @RequestMapping(value="get/{name}", method=RequestMethod.GET)
-    public User get(@PathVariable String name) {
-        User user=new User();
-        user.setName(name);
-        return user;
+    public String get(@PathVariable String name) {
+        return name;
     }
 
 
