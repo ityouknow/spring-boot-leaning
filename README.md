@@ -2,7 +2,7 @@
 
 [Spring Boot 中文索引](https://github.com/ityouknow/awesome-spring-boot) 
 
-## Spring Boot 精选课程列表：
+### 精通 Spring Boot 42 讲课程列表：
 
 **开篇** 
 
