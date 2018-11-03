@@ -73,7 +73,7 @@
 
 **总结**  
 
-- [第结语：总结 Spring Boot 应用实战](https://gitbook.cn/gitchat/column/5b86228ce15aa17d68b5b55a)
+- [结语：总结 Spring Boot 应用实战](https://gitbook.cn/gitchat/column/5b86228ce15aa17d68b5b55a)
 
 
 ## 微服务技术架构和大数据治理实战 
