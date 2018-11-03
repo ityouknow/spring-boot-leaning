@@ -90,6 +90,7 @@ public class MessageControllerTest {
     private void  saveMessages()  {
         for (int i=1;i<10;i++){
             final MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
+            params.add("id",""+i);
             params.add("text", "text"+i);
             params.add("summary", "summary"+i);
             try {

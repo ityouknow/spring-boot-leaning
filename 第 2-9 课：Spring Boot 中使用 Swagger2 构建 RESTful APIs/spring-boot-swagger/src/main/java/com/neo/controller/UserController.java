@@ -29,10 +29,10 @@ public class UserController {
 
     @ApiOperation(value = "创建用户", notes = "根据User对象创建用户")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Long", paramType = "form"),
-            @ApiImplicitParam(name = "name", value = "用户名", required = true, dataType = "String", paramType = "form"),
-            @ApiImplicitParam(name = "age", value = "年龄", required = true, dataType = "String", paramType = "form"),
-            @ApiImplicitParam(name = "ipAddr", value = "ip哟", required = false, dataType = "String", paramType = "form")
+            @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Long", paramType = "query"),
+            @ApiImplicitParam(name = "name", value = "用户名", required = true, dataType = "String", paramType = "query"),
+            @ApiImplicitParam(name = "age", value = "年龄", required = true, dataType = "String", paramType = "query"),
+            @ApiImplicitParam(name = "ipAddr", value = "ip哟", required = false, dataType = "String", paramType = "query")
     })
     @RequestMapping(value = "", method = RequestMethod.POST)
     public BaseResult<User> postUser(@ApiIgnore User user) {
@@ -49,9 +49,9 @@ public class UserController {
 
     @ApiOperation(value = "更新用户信息", notes = "根据用户ID更新信息")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Long", paramType = "path"),
-            @ApiImplicitParam(name = "name", value = "用户名", required = true, dataType = "String", paramType = "form"),
-            @ApiImplicitParam(name = "age", value = "年龄", required = true, dataType = "String", paramType = "form")
+            @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Long", paramType = "query"),
+            @ApiImplicitParam(name = "name", value = "用户名", required = true, dataType = "String", paramType = "query"),
+            @ApiImplicitParam(name = "age", value = "年龄", required = true, dataType = "String", paramType = "query")
     })
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     public BaseResult<User> putUser(@PathVariable Long id, @ApiIgnore User user) {

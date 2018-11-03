@@ -30,11 +30,14 @@ public class MessageController {
 		return messages;
 	}
 
-	@ApiOperation(value = "添加消息", notes = "根据参数创建消息")
+	@ApiOperation(
+			value = "添加消息",
+			notes = "根据参数创建消息"
+	)
 	@ApiImplicitParams({
-			@ApiImplicitParam(name = "id", value = "消息 ID", required = true, dataType = "Long", paramType = "form"),
-			@ApiImplicitParam(name = "text", value = "正文", required = true, dataType = "String", paramType = "form"),
-			@ApiImplicitParam(name = "summary", value = "摘要", required = false, dataType = "String", paramType = "form"),
+			@ApiImplicitParam(name = "id", value = "消息 ID", required = true, dataType = "Long", paramType = "query"),
+			@ApiImplicitParam(name = "text", value = "正文", required = true, dataType = "String", paramType = "query"),
+			@ApiImplicitParam(name = "summary", value = "摘要", required = false, dataType = "String", paramType = "query"),
 	})
 	@PostMapping(value = "message")
 	public Message create(Message message) {
@@ -43,7 +46,10 @@ public class MessageController {
 		return message;
 	}
 
-	@ApiOperation(value = "修改消息", notes = "根据参数修改消息")
+	@ApiOperation(
+			value = "修改消息",
+			notes = "根据参数修改消息"
+	)
 	@PutMapping(value = "message")
 	@ApiResponses({
 			@ApiResponse(code = 100, message = "请求参数有误"),

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chat room websocket</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-3.2.1.min.js" ></script>
+</head>
+<body class="container" style="width: 60%">
+<div class="form-group" ></br>
+    <h5>聊天室</h5>
+    <textarea id="message_content"  class="form-control"  readonly="readonly" cols="50" rows="10"></textarea>
+</div>
+<div class="form-group" >
+    <label for="in_user_name">用户姓名 &nbsp;</label>
+    <input id="in_user_name" value="" class="form-control" /></br>
+    <button id="user_join" class="btn btn-success" >加入聊天室</button>
+    <button id="user_exit" class="btn btn-warning" >离开聊天室</button>
+</div>
+<div class="form-group" >
+    <label for="in_room_msg" >群发消息 &nbsp;</label>
+    <input id="in_room_msg" value="" class="form-control" /></br>
+    <button id="user_send_all" class="btn btn-info" >发送消息</button>
+</div>
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        var urlPrefix ='ws://localhost:8080/chat-room/';
+        var ws = null;
+        $('#user_join').click(function(){
+            var username = $('#in_user_name').val();
+            if(username==''){
+                alert("请输入用户名！");
+                return;
+            }
+            var url = urlPrefix + username;
+            ws = new WebSocket(url);
+            ws.onopen = function () {
+                console.log("建立 websocket 连接...");
+            };
+            ws.onmessage = function(event){
+                //服务端发送的消息
+                $('#message_content').append(event.data+'\n');
+            };
+            ws.onclose = function(){
+                $('#message_content').append('用户['+username+'] 已经离开聊天室!');
+                console.log("关闭 websocket 连接...");
+            }
+        });
+        //客户端发送消息到服务器
+        $('#user_send_all').click(function(){
+            var msg = $('#in_room_msg').val();
+            if(msg==''){
+                alert("请填写消息！");
+                return;
+            }
+            if(ws && msg!=''){
+                ws.send(msg);
+            }
+        });
+        // 退出聊天室
+        $('#user_exit').click(function(){
+            if(ws){
+                ws.close();
+            }
+        });
+    })
+</script>
+
+</html>
