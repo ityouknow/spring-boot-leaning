@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Title</title>
+</head>
+<body>
+<header th:fragment="header">
+    <div style="float: right;margin-top: 30px">
+        <div style="font-size: large">欢迎登录， <text th:text="${session.LOGIN_SESSION_USER.getUserName()}" ></text>
+            !  <a href="/loginOut" th:href="@{/loginOut}" style="font-size: small">退出</a>
+        </div>
+        <div th:if="${session.LOGIN_SESSION_USER.getState()=='unverified'}"  style="color: red">请尽快验证您的注册邮件!</div>
+    </div>
+</header>
+</body>
+</html>
