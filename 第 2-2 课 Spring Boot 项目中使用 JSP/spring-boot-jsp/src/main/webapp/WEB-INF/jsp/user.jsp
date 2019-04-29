@@ -18,7 +18,7 @@
 
 <h3>标签 c:if</h3>
 <c:if test="${username !=null}">
-<p>用户名为：username<p>
+<p>用户名为：${username}<p>
 </c:if>
 
 <h3>标签 c:choose</h3>
