@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings>
+    <localRepository>D:\Common Files\maven\repository</localRepository>
+    <interactiveMode>true</interactiveMode>
+    <offline>false</offline>
+	
+	<mirrors>
+		<mirror>  
+			  <id>repo2</id>  
+			  <mirrorOf>central</mirrorOf>  
+			  <name>spring2.0 for this Mirror.</name>  
+			  <url>https://repo.spring.io/libs-milestone</url>  
+		</mirror>  
+		<mirror>  
+		  <id>net-cn</id>  
+		  <mirrorOf>central</mirrorOf>  
+		  <name>Human Readable Name for this Mirror.</name>  
+		  <url>http://maven.net.cn/content/groups/public/</url>   
+		</mirror>  
+		<mirror>  
+			  <id>ui</id>  
+	
+		  <mirrorOf>central</mirrorOf>  
+			  <name>Human Readable Name for this Mirror.</name>  
+			 <url>http://uk.maven.org/maven2/</url>  
+		</mirror>  
+		<mirror>  
+		  <id>ibiblio</id>  
+		  <mirrorOf>central</mirrorOf>  
+		  <name>Human Readable Name for this Mirror.</name>  
+		 <url>http://mirrors.ibiblio.org/pub/mirrors/maven2/</url>  
+		</mirror>  
+		<mirror>  
+			  <id>jboss-public-repository-group</id>  
+			  <mirrorOf>central</mirrorOf>  
+			  <name>JBoss Public Repository Group</name>  
+			 <url>http://repository.jboss.org/nexus/content/groups/public</url>  
+		</mirror>
+	</mirrors>
+
+	<profiles>
+
+		<profile>
+			<id>neo</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+				<jdk>1.8</jdk>
+			</activation>
+
+			<repositories>
+					<repository>
+						<id>spring-milestones</id>
+						<name>Spring Milestones</name>
+						<url>https://repo.spring.io/libs-milestone</url>
+						<snapshots>
+							<enabled>false</enabled>
+						</snapshots>
+					</repository>
+			</repositories>
+		</profile>
+	
+	</profiles>
+	<activeProfiles>
+		<activeProfile>neo</activeProfile>		
+	</activeProfiles>
+	
+</settings>
