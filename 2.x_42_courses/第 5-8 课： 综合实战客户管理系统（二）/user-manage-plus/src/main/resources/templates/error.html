@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head lang="en" >
+    <meta charset="UTF-8" />
+    <title>500</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"></link>
+
+</head>
+<body class="container">
+    <h1>服务端错误</h1>
+    请求地址：<pan th:text="${url}"></pan><br/>
+    错误信息：<pan th:text="${exception}"></pan>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <title>content</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<h1>content</h1>
+<p>我是登录后才可以看的页面</p>
+
+<form method="post" action="/logout">
+    <button  type="submit">退出</button>
+</form>
+</body>
+</html>

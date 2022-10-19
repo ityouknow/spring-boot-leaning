@@ -1,0 +1,62 @@
+<html xmlns:th="http://www.thymeleaf.org" th:replace="layout :: common_layout(~{::title},~{::content})">
+<head  >
+<meta charset="UTF-8"/>
+<title>添加用户</title>
+</head>
+<body>
+    <content >
+        <div>
+        <br/>
+        <h1>添加用户</h1>
+        <br/><br/>
+        <div class="with:80%">
+            <form class="form-horizontal"   th:action="@{/add}"  method="post">
+                <div class="form-group">
+                    <label for="userName" class="col-sm-2 control-label">userName</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="userName"  id="userName" placeholder="userName"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label" >email</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="email" id="email" placeholder="email"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-2 control-label" >password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" name="password" id="password" placeholder="password"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="age" class="col-sm-2 control-label">age</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="age"  id="age" placeholder="age"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label   class="col-sm-2 control-label"></label>
+                    <div class="col-sm-10">
+                        <div th:if="${errorMsg != null}"  class="alert alert-danger" role="alert" th:text="${errorMsg}">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input type="submit" value="Submit" class="btn btn-info" />
+                        &nbsp; &nbsp; &nbsp;
+                        <input type="reset" value="Reset" class="btn btn-info" />
+                        &nbsp; &nbsp; &nbsp;
+                        <a href="/toAdd" th:href="@{/list}" class="btn btn-info">Back</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </content>
+</body>
+</html>

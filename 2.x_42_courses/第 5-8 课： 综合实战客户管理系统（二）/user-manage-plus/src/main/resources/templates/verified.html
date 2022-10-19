@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>验证</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"></link>
+</head>
+<body class="container">
+<br/>
+<h1>注册邮箱验证</h1>
+<br/><br/>
+<div class="with:60%">
+    <h3 th:if="${userName!=null}">邮箱验证成功，<a href="/toLogin">请登录！</a></h3>
+    <h3 th:if="${userName==null}">邮箱已经验证或者参数有误，请重新检查！<a href="/toRegister">去注册</a></h3>
+</div>
+</body>
+</html>
