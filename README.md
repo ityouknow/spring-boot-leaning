@@ -30,6 +30,6 @@
 
 > 有问题给我留言。
 
-关注公众号：纯洁的微笑，学习更多关于 Spring Boot 内容，公号内回复"springboot"进群交流。
+关注公众号：纯洁的微笑，学习更多关于 Spring Boot 内容，公号内回复"666"进群交流。
 
 ![](http://www.ityouknow.com/assets/images/keeppuresmile_430.jpg)
