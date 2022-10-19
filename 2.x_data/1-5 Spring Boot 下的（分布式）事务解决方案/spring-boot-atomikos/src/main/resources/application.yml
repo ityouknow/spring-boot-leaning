@@ -1,0 +1,33 @@
+spring:
+  jta:
+    enabled: true
+    atomikos:
+      datasource:
+        primary:
+          xa-properties.url: jdbc:mysql://localhost:3306/test1?useSSL=false&pinGlobalTxToPhysicalConnection=true
+          xa-properties.user: root
+          xa-properties.password: root
+          xa-data-source-class-name: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource
+          unique-resource-name: jpa-test1
+          max-pool-size: 30
+          min-pool-size: 6
+          max-lifetime: 6000
+          borrow-connection-timeout: 10000
+        secondary:
+          xa-properties.url: jdbc:mysql://localhost:3306/test2?useSSL=false&pinGlobalTxToPhysicalConnection=true
+          xa-properties.user: root
+          xa-properties.password: root
+          xa-data-source-class-name: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource
+          unique-resource-name: jpa-test2
+          max-pool-size: 30
+          min-pool-size: 6
+          max-lifetime: 6000
+          borrow-connection-timeout: 10000
+  jpa:
+    database: mysql
+    generate-ddl: true
+    show-sql: true
+    open-in-view: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
